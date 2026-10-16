@@ -4,7 +4,7 @@ Client-only Fabric mod for Minecraft 26.3, Fabric Loader 0.19.5 or later, and Ja
 
 ## Install
 
-Copy `ClientLanguageSpoofer-1.0.0.jar` into the Minecraft instance’s `mods` directory.
+Copy `ClientLanguageSpoofer-1.0.1.jar` into the Minecraft instance’s `mods` directory.
 
 ## Usage
 
@@ -24,6 +24,6 @@ The labels are supplied in English and French; language names come from Minecraf
 ./gradlew build
 ```
 
-The distributable is `build/libs/ClientLanguageSpoofer-1.0.0.jar`.
+The distributable is `build/libs/ClientLanguageSpoofer-1.0.1.jar`.
 
 Validated: compilation against Minecraft 26.3, access widener validation, five tests covering persistence, reset, address normalization, malformed files and failed saves, and development-client startup. Manual screen interaction and a live multiplayer packet capture remain to be checked; the test machine was locked during visual verification.
