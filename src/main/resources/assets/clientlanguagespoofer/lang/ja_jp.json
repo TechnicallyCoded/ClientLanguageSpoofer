@@ -1,0 +1,7 @@
+{
+  "clientlanguagespoofer.button": "サーバー言語：%s",
+  "clientlanguagespoofer.default": "デフォルト",
+  "clientlanguagespoofer.picker_hint": "このサーバーに通知する言語のみを変更します。",
+  "clientlanguagespoofer.tooltip": "このサーバーに通知する言語を選択します。Minecraftの表示言語は変更されません。",
+  "clientlanguagespoofer.save_failed": "サーバー言語を保存できませんでした。クライアントのログを確認してください。"
+}

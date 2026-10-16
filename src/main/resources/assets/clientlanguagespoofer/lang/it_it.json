@@ -1,0 +1,7 @@
+{
+  "clientlanguagespoofer.button": "Lingua del server: %s",
+  "clientlanguagespoofer.default": "Predefinita",
+  "clientlanguagespoofer.picker_hint": "Cambia solo la lingua comunicata a questo server.",
+  "clientlanguagespoofer.tooltip": "Scegli la lingua comunicata a questo server. La lingua dell’interfaccia di Minecraft rimane invariata.",
+  "clientlanguagespoofer.save_failed": "Impossibile salvare la lingua del server. Controlla il registro del client."
+}

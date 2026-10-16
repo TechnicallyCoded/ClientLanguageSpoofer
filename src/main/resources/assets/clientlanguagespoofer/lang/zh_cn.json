@@ -1,0 +1,7 @@
+{
+  "clientlanguagespoofer.button": "服务器语言：%s",
+  "clientlanguagespoofer.default": "默认",
+  "clientlanguagespoofer.picker_hint": "仅更改向此服务器报告的语言。",
+  "clientlanguagespoofer.tooltip": "选择向此服务器报告的语言。Minecraft 界面语言保持不变。",
+  "clientlanguagespoofer.save_failed": "无法保存服务器语言。请查看客户端日志。"
+}
