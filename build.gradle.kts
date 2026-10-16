@@ -1,7 +1,7 @@
 plugins {
     id("net.fabricmc.fabric-loom") version "1.17.21"
 }
-version = "1.0.4"
+version = "1.0.5"
 group = "fr.hyping"
 base { archivesName.set("ClientLanguageSpoofer") }
 loom { accessWidenerPath.set(file("src/main/resources/clientlanguagespoofer.accesswidener")) }
