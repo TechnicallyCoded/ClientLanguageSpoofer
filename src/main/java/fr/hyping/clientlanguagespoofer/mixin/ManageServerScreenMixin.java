@@ -28,7 +28,15 @@ public abstract class ManageServerScreenMixin extends Screen {
     @Unique private String clientLanguageSpoofer$draftIp;
     @Unique private String clientLanguageSpoofer$draftName;
 
+    @Unique private LanguageButtons clientLanguageSpoofer$buttons;
+
     protected ManageServerScreenMixin(Component title) { super(title); }
+
+    @Override
+    public void added() {
+        super.added();
+        if (this.clientLanguageSpoofer$buttons != null) this.clientLanguageSpoofer$buttons.refresh();
+    }
 
     @Inject(method = "init", at = @At("TAIL"))
     private void clientLanguageSpoofer$controls(CallbackInfo callback) {
@@ -49,7 +57,7 @@ public abstract class ManageServerScreenMixin extends Screen {
                 widget.setY(widget.getY() + 24);
             }
         }
-        new LanguageButtons(this::addRenderableWidget, this.width / 2 - 100, row, 200,
+        this.clientLanguageSpoofer$buttons = new LanguageButtons(this::addRenderableWidget, this.width / 2 - 100, row, 200,
             () -> this.clientLanguageSpoofer$selection, () -> {
                 this.clientLanguageSpoofer$draftIp = this.ipEdit.getValue();
                 this.clientLanguageSpoofer$draftName = this.nameEdit.getValue();

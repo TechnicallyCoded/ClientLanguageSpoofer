@@ -21,7 +21,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class LanguageSelectScreenMixin extends OptionsSubScreen {
     @Unique private boolean clientLanguageSpoofer$hasControls;
 
+    @Unique private LanguageButtons clientLanguageSpoofer$buttons;
+
     protected LanguageSelectScreenMixin(Screen parent, Options options, Component title) { super(parent, options, title); }
+
+    @Override
+    public void added() {
+        super.added();
+        if (this.clientLanguageSpoofer$buttons != null) this.clientLanguageSpoofer$buttons.refresh();
+    }
 
     @Inject(method = "addTitle", at = @At("TAIL"))
     private void clientLanguageSpoofer$controls(CallbackInfo callback) {
@@ -31,7 +39,7 @@ public abstract class LanguageSelectScreenMixin extends OptionsSubScreen {
         if (address == null) return;
         this.clientLanguageSpoofer$hasControls = true;
         this.layout.setHeaderHeight(this.layout.getHeaderHeight() + 24);
-        new LanguageButtons(this::addRenderableWidget, Math.max(4, this.width - 254), 4, Math.min(250, this.width - 8),
+        this.clientLanguageSpoofer$buttons = new LanguageButtons(this::addRenderableWidget, Math.max(4, this.width - 254), 4, Math.min(250, this.width - 8),
             () -> ClientLanguageSpoofer.overrides().get(address), () -> this.minecraft.gui.setScreen(
                 new ServerLanguageScreen((Screen) (Object) this, ClientLanguageSpoofer.overrides().get(address),
                     code -> ClientLanguageSpoofer.apply(address, code))), () -> ClientLanguageSpoofer.apply(address, null));
