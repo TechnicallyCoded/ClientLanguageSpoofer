@@ -5,7 +5,7 @@
   "name": "Client Language Spoofer",
   "description": "Per-server language reporting without changing the Minecraft UI language.",
   "authors": [
-    "HypingStudio"
+    "TCoded"
   ],
   "icon": "assets/clientlanguagespoofer/icon.png",
   "license": "All-Rights-Reserved",
