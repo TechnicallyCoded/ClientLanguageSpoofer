@@ -1,0 +1,7 @@
+accessWidener v2 official
+accessible class net/minecraft/client/gui/screens/options/LanguageSelectScreen$LanguageSelectionList
+accessible class net/minecraft/client/gui/screens/options/LanguageSelectScreen$LanguageSelectionList$Entry
+accessible field net/minecraft/client/gui/screens/options/LanguageSelectScreen languageSelectionList Lnet/minecraft/client/gui/screens/options/LanguageSelectScreen$LanguageSelectionList;
+accessible field net/minecraft/client/gui/screens/options/LanguageSelectScreen$LanguageSelectionList$Entry code Ljava/lang/String;
+extendable method net/minecraft/client/gui/screens/options/LanguageSelectScreen onDone ()V
+accessible method net/minecraft/client/gui/components/AbstractSelectionList centerScrollOn (Lnet/minecraft/client/gui/components/AbstractSelectionList$Entry;)V

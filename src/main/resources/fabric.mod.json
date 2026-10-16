@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "clientlanguagespoofer",
+  "version": "${version}",
+  "name": "Client Language Spoofer",
+  "description": "Per-server language reporting without changing the Minecraft UI language.",
+  "authors": [
+    "HypingStudio"
+  ],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "fr.hyping.clientlanguagespoofer.ClientLanguageSpoofer"
+    ]
+  },
+  "mixins": [
+    "clientlanguagespoofer.mixins.json"
+  ],
+  "accessWidener": "clientlanguagespoofer.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  }
+}

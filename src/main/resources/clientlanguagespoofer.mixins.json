@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "fr.hyping.clientlanguagespoofer.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "OptionsMixin",
+    "ConnectScreenMixin",
+    "MinecraftMixin",
+    "ClientPacketListenerAccessor",
+    "ManageServerScreenMixin",
+    "LanguageSelectScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
